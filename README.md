@@ -6,6 +6,10 @@
 I would like to use the vim with the version 8.0+ because it has lots of new attractive features such as terminal mode.
 
 ```
+# Need to ensure python3 is installed
+yum install python3-devel
+
+
 git clone https://github.com/vim/vim.git
 cd vim
 
@@ -13,7 +17,7 @@ cd vim
 rm -f src/auto/config.cache
 make distclean
 
-./configure --with-features=huge --enable-multibyte --enable-python3interp --with-python-config-dir='/opt/_internal/cpython-3.7.0/lib/python3.7/config-3.7m-x86_64-linux-gnu'
+./configure --with-features=huge --enable-multibyte --enable-python3interp=dynamic --with-python-config-dir='/lib64/python3.6/config-3.6m-x86_64-linux-gnu/' --enable-fail-if-missing
 
 make -j8
 make install
