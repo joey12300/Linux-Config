@@ -22,7 +22,8 @@ make distclean
 make -j8
 make install
 
-alias="/usr/local/bin/vim"
+alias vim="/usr/local/bin/vim"
+alias vi="/usr/local/bin/vim"
 ```
 
 #### Terminal Mode
