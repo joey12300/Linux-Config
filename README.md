@@ -8,6 +8,8 @@ I would like to use the vim with the version 8.0+ because it has lots of new att
 ```
 # Need to ensure python3 is installed
 yum install python3-devel
+# jedi is a library for python
+python3 -m pip install jedi
 
 
 git clone https://github.com/vim/vim.git
