@@ -13,10 +13,12 @@ cd vim
 rm -f src/auto/config.cache
 make distclean
 
-./configure --with-features=huge --enable-multibyte --enable-python3interp --with-python-config-dir='/xxx/config-3.7m-x86_64-linux-gnu'
+./configure --with-features=huge --enable-multibyte --enable-python3interp --with-python-config-dir='/opt/_internal/cpython-3.7.0/lib/python3.7/config-3.7m-x86_64-linux-gnu'
 
 make -j8
 make install
+
+alias="/usr/local/bin/vim"
 ```
 
 #### Terminal Mode
